@@ -1,0 +1,73 @@
+*{
+    font-family: "merriweather";
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-switch {
+    margin-bottom: 20px;
+}
+
+.form-switch button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #59bc69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-switch button:hover {
+    background-color: #45a454;
+}
+
+form {
+    display: none; /* Hide forms by default */
+    flex-direction: column;
+}
+
+form.active {
+    display: flex; /* Show active form */
+}
+
+form.hidden {
+    display: none; /* Ensure hidden forms are not shown */
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 12px;
+    background-color: #59bc69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a454;
+}

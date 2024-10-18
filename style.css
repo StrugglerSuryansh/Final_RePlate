@@ -1,0 +1,288 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "merriweather";
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #2f3640;
+    color: white;
+    padding: 10px 0;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #59bc69;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu i {
+    font-size: 1.2rem; /* Set the size of the menu icon */
+}
+
+.menu select {
+    padding: 5px;
+    background-color: white;
+    color: #59bc69;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+/* Header Buttons */
+.header1-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center; /* Vertically center the buttons and icons */
+}
+
+.header1-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Reduced font size for better alignment */
+}
+
+.header1-buttons button i {
+    font-size: 1.2rem; /* Icon size */
+}
+
+.header1-buttons button:hover {
+    background-color: #1a1a1a;
+}
+
+#custcare, #reg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(90deg, rgba(89,188,105,1) 0%, rgba(18,119,64,1) 100%);
+    height: 120px; /* Slightly increased the height */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px; /* Increased the logo size */
+    height: 100px; /* Adjusted logo height */
+    margin-right: 30px;
+}
+
+.project-name {
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.visit-charity-btn {
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: 2px solid gold;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.7);
+    transition: all 0.3s ease;
+}
+
+.visit-charity-btn:hover {
+    background-color: gold;
+    color: white;
+}
+
+/* Social Links */
+.social-links ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+    left: 20px;
+}
+
+.social-links ul li {
+    margin: 10px 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links ul li i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social-links ul li:hover {
+    background-color: #59bc69;
+}
+
+/* Main Content Styling */
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.pic-donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.picture img {
+    width: 95%; /* Keep the image width */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.donate-button {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donate-button p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#donation-request-btn {
+    background-color: #59bc69;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#donation-request-btn:hover {
+    background-color: #45a454;
+}
+
+/* Map Section */
+.map-section {
+    background-color: #e9ecef;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Donation Pictures */
+.donation-pictures {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.donation-pictures .pictures img {
+    width: 30%;
+    height: 420px;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #59bc69;
+    color: white;
+    padding: 40px 6rem;
+    text-align: left;
+    margin: 6rem 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+/* Leaderboard Section */
+.leaderboard {
+    background-color: #f1f1f1;
+    padding: 50px;
+}
+
+.leaderboard h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.leaderboard-table {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}

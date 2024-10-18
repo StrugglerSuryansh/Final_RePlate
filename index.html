@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replate - Connecting Homes, Restaurants & Charities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header1">
+            <div class="menu">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <select> 
+                    <option>Menu</option>
+                    <option>Dashboard</option>
+                    <option>My Profile</option>
+                    <option>My Donations</option>
+                    <option>Track Donation</option>
+                    <option>Our Activities</option>
+                    <option>FAQs</option>
+                </select>
+            </div>
+            <div class="header1-buttons">
+                <div id="custcare">
+                    <div>
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <button style="font-size: 1rem;color: white;">Customer Care</button>
+                </div>
+                <div>
+                    <button onclick="window.location.href='pricing.html'" style="color: white;" id="pricing">Pricing</button>
+                </div>
+                <div id="reg">
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <button onclick="window.location.href='login.html'" style="font-size: 1rem;color: white;">Register/Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="logo">
+                <img src="RePlateicon.png" alt="Logo">
+            </div>
+            <h1 class="project-name">RePlate</h1>
+            <button class="visit-charity-btn">Visit Nearest Charity</button>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="social-links">
+            <ul>
+                <li id="topsocial"><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+                <li id="bottomsocial"><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+        <div class="pic-donate">
+            <div class="picture">
+                <img src="people_in_row.jpg" alt="Donation Image">
+            </div>
+            <div class="donate-button">
+                <p>"Turn Excess, Into Success"</p>
+                <button onclick="window.location.href='donation_request.html'" id="donation-request-btn">Make a Donation Request</button>
+            </div>
+        </div>
+        
+        <section class="map-section">
+            <h2 style="font-size: 2.3rem;">Map Showing Nearest Charity Centers</h2>
+            <div id="map"></div>
+        </section>
+
+        <!-- Donation Pictures Section -->
+        <section class="donation-pictures">
+            <h2 style="font-size:2.5rem">Pictures of Donations</h2>
+            <div class="pictures">
+                <img src="food_donate3.jpg" alt="Donation 1">
+                <img src="food_donate4.jpg" alt="Donation 2">
+                <img src="food_donate5.jpg" alt="Donation 3">
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h1 style="font-size:2.5rem">About Us</h1>
+            <p>At Replate, we believe that food is too valuable to waste. Every day, countless meals go uneaten while millions face hunger. Our mission is to bridge this gap by connecting restaurants, cloud kitchens, households, and food providers with local charities and food banks. By doing so, we aim to reduce food waste and ensure that surplus food reaches those who need it most.
+                <br>
+                Founded with a commitment to sustainability and community, Replate leverages technology to create a seamless food donation experience. Our platform allows food donors to contribute surplus meals in real-time, optimizing pick-up schedules and minimizing food spoilage. Through the integration of AI and real-time data, we ensure that food is not only rescued but also distributed efficiently to support hunger-relief efforts.
+                <br>
+                <br>
+                What Sets Us Apart:
+                <br>
+                <b>Sustainability at Heart:</b> We prioritize eco-friendly practices, from using sustainable containers for food donations to exploring partnerships with electric vehicle companies to reduce the carbon footprint of deliveries.
+                <br>
+                <b>Real-Time Connections:</b> Our platform connects food donors with local charities and food banks in real time, ensuring that surplus food is collected and delivered quickly, minimizing waste.
+                <br>
+                <b>Smart Inventory Management:</b> By integrating AI and predictive analytics, Replate helps donors manage their surplus inventory and forecast future needs, reducing overproduction and food waste.
+                <br>
+                <b>Community Impact:</b>With every donation, you are not only reducing waste but also supporting the fight against hunger. We believe in creating a more equitable food system where no meal goes to waste, and every person has access to nutritious food.
+                <!-- <br> -->
+                <br>
+                <b>Our Vision:</b> Our vision is to create a world where surplus food is no longer wasted but repurposed to feed communities in need. We are driven by the belief that technology and innovation can be used for social good, transforming the way we approach food distribution and waste reduction. In the future, we aim to expand Replate’s reach, partner with more organizations, and continue to innovate with new features like smart labeling, gamification, and rewards for frequent donors.
+                <!-- <br> -->
+                <br>
+                <b>Join Us in Making a Difference:</b> We invite you to be part of our mission. Whether you are a restaurant, a food provider, or an individual household, your contributions can help reduce food waste, fight hunger, and make our communities more sustainable. Every donation counts, and together, we can create a meaningful impact.
+                <!-- <br> -->
+                <br>
+                <i>Thank you for supporting RePlate and helping us build a future where no meal goes to waste.</i></p>
+        </section>
+
+        <!-- Donations Leaderboard Section -->
+        <section class="leaderboard">
+            <h2 style="font-size: 2.6rem;">Donations Leaderboard</h2>
+            <div class="leaderboard-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.no</th>
+                            <th>Username</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>User1</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>User2</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>User3</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>User4</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>User5</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Contact us | Subscribe to our newsletter | Follow us on social media</p>
+        </div>
+    </footer>
+</body>
+</html>

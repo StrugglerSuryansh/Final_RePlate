@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Donation Request | Replate</title>
+    <link rel="stylesheet" href="donation_request.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"><!-- Link to the CSS for the form -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header1">
+            <div class="menu">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <select>
+                    <option>Menu</option>
+                    <option>Dashboard</option>
+                    <option>My Profile</option>
+                    <option>My Donations</option>
+                    <option>Track Donation</option>
+                    <option>Our Activities</option>
+                    <option>FAQs</option>
+                </select>
+            </div>
+            <div class="header1-buttons">
+                <div id="custcare">
+                    <div>
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <button style="font-size: 1rem;color: white;">Customer Care</button>
+                </div>
+                <div>
+                    <button onclick="window.location.href='pricing.html'" style="color: white;" id="pricing">Pricing</button>
+                </div>
+                <div id="reg">
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <button onclick="window.location.href='login.html'" style="font-size: 1rem;color: white;">Register/Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="logo">
+                <a href="index.html"><img src="RePlateicon.png" alt="Logo"></a>
+            </div>
+            <h1 class="project-name">RePlate</h1>
+            <button class="visit-charity-btn">Visit Nearest Charity</button>
+        </div>
+    </header>
+
+    <!-- Donation Request Form Section -->
+    <div class="donation-form-container">
+        <form id="donationRequestForm">
+            <label for="foodType">Food Type:</label>
+            <select id="foodType" required>
+                <option value="">Select...</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+            </select>
+
+            <label for="foodTemperature">Food Temperature:</label>
+            <select id="foodTemperature" required>
+                <option value="">Select...</option>
+                <option value="hot">Hot Food</option>
+                <option value="cold">Cold Food</option>
+            </select>
+
+            <label for="pickupSchedule">Pick-Up Schedule:</label>
+            <select id="pickupSchedule" required>
+                <option value="">Select...</option>
+                <option value="morning">Morning (8 AM - 12 PM)</option>
+                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                <option value="evening">Evening (4 PM - 8 PM)</option>
+                <option value="night">Night (8 PM - 11 PM)</option>
+            </select>
+
+            <label for="photoUpload">Upload Photo:</label>
+            <input type="file" id="photoUpload" accept="image/*" required>
+
+            <button type="submit">Submit Donation Request</button>
+        </form>
+    </div>
+
+    <script src="donation_request.js"></script> <!-- Link to the JavaScript file for handling submission -->
+</body>
+</html>
