@@ -3,31 +3,25 @@ body {
     font-family: "merriweather";
     background-color: #f4f4f9;
     color: #333;
-    text-align: center; /* Center text for a more professional look */
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #2f3640;
-    color: white;
-}
-
+/* Header Styles */
 .header1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     background-color: #59bc69;
-    height: 50px;
+    min-height: 50px;
 }
 
 .menu {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.menu i {
-    font-size: 1.2rem; /* Set the size of the menu icon */
 }
 
 .menu select {
@@ -37,13 +31,14 @@ header {
     border-radius: 20px;
     border: 1px solid #ddd;
     font-size: 1rem;
+    max-width: 150px;
 }
 
-/* Header Buttons */
 .header1-buttons {
     display: flex;
     gap: 15px;
-    align-items: center; /* Vertically center the buttons and icons */
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .header1-buttons button {
@@ -54,23 +49,8 @@ header {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
-    transition: background-color 0.3s ease;
-    font-size: 0.9rem; /* Reduced font size for better alignment */
-}
-
-.header1-buttons button i {
-    font-size: 1.2rem; /* Icon size */
-}
-
-.header1-buttons button:hover {
-    background-color: #1a1a1a;
-}
-
-#custcare, #reg {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 8px;
+    font-size: 0.9rem;
 }
 
 .header2 {
@@ -79,79 +59,101 @@ header {
     align-items: center;
     padding: 10px 30px;
     background: linear-gradient(90deg, rgba(89,188,105,1) 0%, rgba(18,119,64,1) 100%);
-    height: 120px; /* Slightly increased the height */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    min-height: 120px;
 }
 
 .logo img {
-    width: 100px; /* Increased the logo size */
-    height: 100px; /* Adjusted logo height */
+    width: 100px;
+    height: 100px;
     margin-right: 30px;
 }
 
 .project-name {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.visit-charity-btn {
-    background-color: #ffc107;
-    color: #333;
-    padding: 12px 20px;
-    border-radius: 30px;
-    font-size: 1rem;
-    border: 2px solid gold;
-    box-shadow: 0 0 10px rgba(255, 193, 7, 0.7);
-    transition: all 0.3s ease;
-}
-
-.visit-charity-btn:hover {
-    background-color: gold;
-    color: white;
-}
-
-/* Plans Section Styles */
-h1 {
-    margin: 30px 0;
-}
-
+/* Plans Section */
 .plans-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Wraps plans on smaller screens */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .plan {
-    font-size:medium;
-    text-align: left;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px; /* Increased padding for a taller look */
-    margin: 10px;
-    width: 300px; /* Fixed width for consistency */
-    /* text-align: center; */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
-}
-.plan >h2{
-    text-align: center;
-    font-size: largest;
+    padding: 30px;
+    text-align: left;
 }
 
-.plan:hover {
-    transform: scale(1.05); /* Magnify effect */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+/* Responsive Breakpoints */
+@media screen and (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .header1-buttons {
+        justify-content: center;
+    }
+
+    .header2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo img {
+        margin-right: 0;
+    }
+
+    .visit-charity-btn {
+        margin-top: 10px;
+    }
 }
 
-.plan h2 {
-    color: #59bc69; /* Plan title color */
+@media screen and (max-width: 480px) {
+    .header1-buttons button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .plan {
+        min-width: 220px;
+        padding: 20px;
+    }
+
+    .menu select {
+        max-width: 120px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
 }
 
-.price {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 10px;
+@media screen and (max-width: 320px) {
+    .header1-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header1-buttons button {
+        width: 100%;
+    }
 }
